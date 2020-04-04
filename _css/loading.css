@@ -1,0 +1,145 @@
+/* ====== Manual da marca ====== */
+{
+    color: rgba(56, 182, 255, 1);
+    color: #38b6ff;
+    color: rgba(19, 46, 61, 1);
+    color: #132e3d;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: rgba(19, 46, 61, 1) url("../_imagens/banner.png") 0 0 no-repeat padding-box;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Paytone One', sans-serif;
+    color: #FFFFFF;
+}
+
+.content {
+    max-width: 100%;
+    height: 85vh;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+.content .box-left {
+    margin-top: 5vh;
+    flex-grow: 1;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+.content .box-left .logo {
+
+}
+.content .box-left .logo img {
+    width: 35%;
+    min-width: 200px;
+}
+.content .box-left .text {
+    font-size: 80px;
+    min-font-size: 3vh;
+    max-font-size: 10vh;
+    margin: 2.5% 0;
+}
+.content .box-left .wait {
+    margin: 2.5% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.content .box-left .socialmedia {
+    margin: 2.5% 0;
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content .box-right {
+    flex-grow: 1;
+    max-width: 40%;
+}
+.content .box-right .pic {
+    height: auto;
+}
+.content .box-right .pic img {
+
+}
+.credits {
+    width: auto;
+    height: 15vh;
+    max-height: 100%;
+    margin: 0 5%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.credits .credits-box {
+    margin: auto 0 0 0;
+    width: auto;
+}
+.credits .credits-box p {
+    line-height: 20px;
+}
+.credits .credits-box span {
+    font-weight: bold;
+}
+.credits .credits-box a {
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .box-left {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .content .box-left .logo {
+        margin-top: 40px;
+    }
+    .content .box-left .text {
+        margin-top: 390px;
+        font-size: 60px;
+    }
+    .content .box-left .socialmedia {
+        margin: 20px auto;
+        width: 100px;
+    }
+    .content .box-right {
+        position: absolute;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .credits {
+        margin: 40px auto;
+        padding-bottom: 40px;
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .content .box-left .logo {
+        margin-top: 5%;
+    }
+    .content .box-left .text {
+        margin-top: 75%;
+        font-size: 40px;
+    }
+    .content .box-right .pic img {
+        max-width: 100%;
+        min-width: 300px;
+    }
+}
+
